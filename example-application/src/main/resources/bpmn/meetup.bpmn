@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_0bmatom" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="3.5.0">
+  <bpmn:collaboration id="Collaboration_0oaxiks">
+    <bpmn:participant id="Participant_0k1i97p" name="Meetup 10.12.2019" processRef="process_meetup_20191210" />
+  </bpmn:collaboration>
+  <bpmn:process id="process_meetup_20191210" name="Meetup 10.12.2019" isExecutable="true" camunda:versionTag="1">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>SequenceFlow_0a8bziz</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:userTask id="Task_02l24kn" name="Was über 7.12 erzählen">
+      <bpmn:extensionElements>
+        <camunda:taskListener delegateExpression="${after10Seconds}" event="timeout" id="taskTimeOut">
+          <bpmn:timerEventDefinition id="TimerEventDefinition_01opxlu">
+            <bpmn:timeDuration xsi:type="bpmn:tFormalExpression">PT10S</bpmn:timeDuration>
+          </bpmn:timerEventDefinition>
+        </camunda:taskListener>
+      </bpmn:extensionElements>
+      <bpmn:incoming>SequenceFlow_0a8bziz</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1kv7z7o</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:endEvent id="EndEvent_0kn87jr">
+      <bpmn:incoming>SequenceFlow_1kv7z7o</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_0a8bziz" sourceRef="StartEvent_1" targetRef="Task_02l24kn" />
+    <bpmn:sequenceFlow id="SequenceFlow_1kv7z7o" sourceRef="Task_02l24kn" targetRef="EndEvent_0kn87jr" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0oaxiks">
+      <bpmndi:BPMNShape id="Participant_0k1i97p_di" bpmnElement="Participant_0k1i97p" isHorizontal="true">
+        <dc:Bounds x="129" y="79" width="600" height="250" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="179" y="172" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0a8bziz_di" bpmnElement="SequenceFlow_0a8bziz">
+        <di:waypoint x="215" y="190" />
+        <di:waypoint x="270" y="190" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="UserTask_1okewbf_di" bpmnElement="Task_02l24kn">
+        <dc:Bounds x="270" y="150" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_0kn87jr_di" bpmnElement="EndEvent_0kn87jr">
+        <dc:Bounds x="432" y="172" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1kv7z7o_di" bpmnElement="SequenceFlow_1kv7z7o">
+        <di:waypoint x="370" y="190" />
+        <di:waypoint x="432" y="190" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

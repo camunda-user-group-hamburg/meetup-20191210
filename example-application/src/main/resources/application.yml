@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: meetup-20191210
+server:
+  port: 8090
+camunda:
+  bpm:
+    admin-user:
+      id: admin
+    filter:
+      create: All
+logging:
+  level:
+    root: INFO
+    org.camunda.bpm.engine.persistence: WARN
+    org.springframework.test.annotation.ProfileValueUtils: WARN
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} context:[%X] - %msg%n"
