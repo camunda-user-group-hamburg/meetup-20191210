@@ -31,10 +31,13 @@ dependencies {
 
   implementation("org.mybatis:mybatis:3.5.3")
 
+  implementation("io.toolisticon.springboot:springboot-swagger-starter:0.0.4")
+
 
   implementation(kotlin("stdlib-jdk8"))
   implementation(kotlin("reflect"))
   implementation("io.github.microutils:kotlin-logging:1.6.26")
+  implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 
 
   testImplementation("org.jetbrains.kotlin:kotlin-test")

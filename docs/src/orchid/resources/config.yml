@@ -5,7 +5,7 @@ site:
 BsDoc:
   primaryColor: '#DE9149'
   social:
-    twitter: 'holisticon'
+    twitter: 'cughamburg'
     github: camunda-user-group-hamburg/meetup-20191210
   menu:
     - type: 'wiki'

@@ -7,7 +7,7 @@
     <bpmn:startEvent id="StartEvent_1">
       <bpmn:outgoing>SequenceFlow_0a8bziz</bpmn:outgoing>
     </bpmn:startEvent>
-    <bpmn:userTask id="Task_02l24kn" name="Was über 7.12 erzählen">
+    <bpmn:userTask id="task_talk2me" name="Was über 7.12 erzählen">
       <bpmn:extensionElements>
         <camunda:taskListener delegateExpression="${after10Seconds}" event="timeout" id="taskTimeOut">
           <bpmn:timerEventDefinition id="TimerEventDefinition_01opxlu">
@@ -21,9 +21,21 @@
     <bpmn:endEvent id="EndEvent_0kn87jr">
       <bpmn:incoming>SequenceFlow_1kv7z7o</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:sequenceFlow id="SequenceFlow_0a8bziz" sourceRef="StartEvent_1" targetRef="Task_02l24kn" />
-    <bpmn:sequenceFlow id="SequenceFlow_1kv7z7o" sourceRef="Task_02l24kn" targetRef="EndEvent_0kn87jr" />
+    <bpmn:sequenceFlow id="SequenceFlow_0a8bziz" sourceRef="StartEvent_1" targetRef="task_talk2me" />
+    <bpmn:sequenceFlow id="SequenceFlow_1kv7z7o" sourceRef="task_talk2me" targetRef="EndEvent_0kn87jr" />
+    <bpmn:boundaryEvent id="IntermediateThrowEvent_0blrx9q" attachedToRef="task_talk2me">
+      <bpmn:outgoing>SequenceFlow_1uemm9t</bpmn:outgoing>
+      <bpmn:errorEventDefinition id="ErrorEventDefinition_01v5sxx" errorRef="Error_0tt08h7" />
+    </bpmn:boundaryEvent>
+    <bpmn:endEvent id="EndEvent_19fl0xo" name="failed">
+      <bpmn:extensionElements>
+        <camunda:executionListener delegateExpression="${logFailure}" event="start" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>SequenceFlow_1uemm9t</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_1uemm9t" sourceRef="IntermediateThrowEvent_0blrx9q" targetRef="EndEvent_19fl0xo" />
   </bpmn:process>
+  <bpmn:error id="Error_0tt08h7" name="FAIL" />
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0oaxiks">
       <bpmndi:BPMNShape id="Participant_0k1i97p_di" bpmnElement="Participant_0k1i97p" isHorizontal="true">
@@ -36,7 +48,7 @@
         <di:waypoint x="215" y="190" />
         <di:waypoint x="270" y="190" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="UserTask_1okewbf_di" bpmnElement="Task_02l24kn">
+      <bpmndi:BPMNShape id="UserTask_1okewbf_di" bpmnElement="task_talk2me">
         <dc:Bounds x="270" y="150" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="EndEvent_0kn87jr_di" bpmnElement="EndEvent_0kn87jr">
@@ -45,6 +57,20 @@
       <bpmndi:BPMNEdge id="SequenceFlow_1kv7z7o_di" bpmnElement="SequenceFlow_1kv7z7o">
         <di:waypoint x="370" y="190" />
         <di:waypoint x="432" y="190" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="BoundaryEvent_1x10yn1_di" bpmnElement="IntermediateThrowEvent_0blrx9q">
+        <dc:Bounds x="292" y="212" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_19fl0xo_di" bpmnElement="EndEvent_19fl0xo">
+        <dc:Bounds x="432" y="262" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="437" y="305" width="27" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1uemm9t_di" bpmnElement="SequenceFlow_1uemm9t">
+        <di:waypoint x="310" y="248" />
+        <di:waypoint x="310" y="280" />
+        <di:waypoint x="432" y="280" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

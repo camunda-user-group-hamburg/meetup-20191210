@@ -1,5 +1,7 @@
 # How to setup
 
+Wie ihr diese Demo laufen lassen könnt. (Ohne ee features: version in `buildSrc/src/main/kotlin/Dependencies.kt` auf 7.12.0 setzen).
+
 ## Repository
 
 ```
@@ -27,17 +29,3 @@ Den camunda license key ablegen in:
 
 * `$HOME/.camunda/license.txt`
 
-
-## Features
-
-Die einzelnen features der Demo lassen sich über die application.yaml ein und ausschalten:
-
-```
-feature:
-  startFooProcesses: true
-  logHistoric: true
-  onTaskCreate: true
-  processGgtService: true
-  recalculateTimer: true
-  userTaskCompletion: true
-```
