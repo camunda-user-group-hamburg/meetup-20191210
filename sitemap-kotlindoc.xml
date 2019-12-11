@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://camunda-user-group-hamburg.github.io/meetup-20191210/de/cughh/meetup/_20191210/application</loc>
+        <lastmod>2019-12-11</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://camunda-user-group-hamburg.github.io/meetup-20191210/de/cughh/meetup/_20191210/application/MeetupProcess</loc>
+        <lastmod>2019-12-11</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://camunda-user-group-hamburg.github.io/meetup-20191210/de/cughh/meetup/_20191210/application/MeetupProcess/VARIABLES</loc>
+        <lastmod>2019-12-11</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://camunda-user-group-hamburg.github.io/meetup-20191210/de/cughh/meetup/_20191210/application/InstanceSearch</loc>
+        <lastmod>2019-12-11</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://camunda-user-group-hamburg.github.io/meetup-20191210/de/cughh/meetup/_20191210/application/MeetupApplication</loc>
+        <lastmod>2019-12-11</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    
+</urlset>

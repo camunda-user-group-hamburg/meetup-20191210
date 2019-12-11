@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 0.17.7-SNAPSHOT"/>
+<link rel="icon" href="https://camunda-user-group-hamburg.github.io/meetup-20191210/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>MeetupApplication</title>
+
+
+<meta name="description" content="CUGHH Meetup - 10.12.2019">
+
+
+
+
+
+<script>
+    window.site = {"orchidVersion":"0.17.7-SNAPSHOT","baseUrl":"https://camunda-user-group-hamburg.github.io/meetup-20191210","environment":"debug","version":"20191210"};
+</script>
+
+
+
+
+
+<!-- start:debug info -->
+
+<!-- THEME -->
+<!-- Type: BsDoc -->
+<!-- Class: com.eden.orchid.bsdoc.BSDocTheme -->
+
+<!-- PAGE -->
+<!-- Type: kotlindocClass -->
+<!-- Class: com.eden.orchid.kotlindoc.page.KotlindocClassPage -->
+<!-- Layout: index -->
+<!-- Resolved Layout: templates/layouts/index.peb -->
+<!-- Page Template: kotlindocClass, page -->
+<!-- Resolved Page Template:  -->
+
+<!-- RESOURCE -->
+<!-- Class: com.eden.orchid.kotlindoc.resources.KotlinClassdocResource -->
+<!-- Source Filename: de/cughh/meetup/_20191210/application/MeetupApplication.html -->
+
+<!-- COMPLETE PAGE CONFIGURATION -->
+<script>
+    window.allData = {"reference":{"path":"de/cughh/meetup/_20191210/application","baseUrl":"https://camunda-user-group-hamburg.github.io/meetup-20191210","fileName":"MeetupApplication","extension":"html","usePrettyUrl":true,"link":"https://camunda-user-group-hamburg.github.io/meetup-20191210/de/cughh/meetup/_20191210/application/MeetupApplication"},"description":"","title":"MeetupApplication"};
+</script>
+
+<!-- end:debug info -->
+
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
+<link rel="stylesheet" type="text/css" href="https://camunda-user-group-hamburg.github.io/meetup-20191210/BsDoc/38368027/assets/css/bsdoc.css" />
+<!-- end:inject styles -->
+
+
+</head>
+<body>
+
+
+
+
+<a class="github-fork-ribbon left-top"
+   href="https://github.com/camunda-user-group-hamburg/meetup-20191210"
+   title="Fork me on GitHub">Fork me on GitHub</a>
+
+
+<header class="navbar navbar-fixed-top bs-docs-nav">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://camunda-user-group-hamburg.github.io/meetup-20191210">Was ist neu in Camunda 7.12.0</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">features<span class="caret"></span></a>
+                            <ul class="dropdown-menu scrollable-menu">
+                                
+                                    <li><a href="https://camunda-user-group-hamburg.github.io/meetup-20191210/wiki/features/spring-boot">Spring Boot</a></li>
+                                
+                                    <li><a href="https://camunda-user-group-hamburg.github.io/meetup-20191210/wiki/features/usertask">User Task</a></li>
+                                
+                                    <li><a href="https://camunda-user-group-hamburg.github.io/meetup-20191210/wiki/features/bpm-assert">Assert</a></li>
+                                
+                                    <li><a href="https://camunda-user-group-hamburg.github.io/meetup-20191210/wiki/features/engine">Engine</a></li>
+                                
+                            </ul>
+                        </li>
+                    
+                
+                    
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">links<span class="caret"></span></a>
+                            <ul class="dropdown-menu scrollable-menu">
+                                
+                                    <li><a href="https://camunda-user-group-hamburg.github.io/meetup-20191210/wiki/links/webinar">Webinar</a></li>
+                                
+                                    <li><a href="https://camunda-user-group-hamburg.github.io/meetup-20191210/wiki/links/links">Infos</a></li>
+                                
+                            </ul>
+                        </li>
+                    
+                
+                    
+                        <li><a href="https://camunda-user-group-hamburg.github.io/meetup-20191210/wiki/setup">Setup</a></li>
+                    
+                
+                    
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">All Packages<span class="caret"></span></a>
+                            <ul class="dropdown-menu scrollable-menu">
+                                
+                                    <li><a href="https://camunda-user-group-hamburg.github.io/meetup-20191210/de/cughh/meetup/_20191210/application">de.cughh.meetup._20191210.application</a></li>
+                                
+                            </ul>
+                        </li>
+                    
+                
+                    
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">All Classes<span class="caret"></span></a>
+                            <ul class="dropdown-menu scrollable-menu">
+                                
+                                    <li><a href="https://camunda-user-group-hamburg.github.io/meetup-20191210/de/cughh/meetup/_20191210/application/InstanceSearch">InstanceSearch</a></li>
+                                
+                                    <li><a href="https://camunda-user-group-hamburg.github.io/meetup-20191210/de/cughh/meetup/_20191210/application/MeetupApplication">MeetupApplication</a></li>
+                                
+                                    <li><a href="https://camunda-user-group-hamburg.github.io/meetup-20191210/de/cughh/meetup/_20191210/application/MeetupProcess">MeetupProcess</a></li>
+                                
+                                    <li><a href="https://camunda-user-group-hamburg.github.io/meetup-20191210/de/cughh/meetup/_20191210/application/MeetupProcess/VARIABLES">VARIABLES</a></li>
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<div id="top"></div>
+
+
+    <div class="bs-docs-masthead" id="jumbotron">
+        <div class="container">
+            <h1 class="home-title">MeetupApplication</h1>
+        </div>
+    </div>
+
+
+<div class="container bs-docs-container">
+    <div class="row">
+        <div class="col-md-9" role="main">
+        <nav aria-label="breadcrumb">
+    <ul class="breadcrumb">
+    
+    
+        <li class="breadcrumb-item active" aria-current="page">MeetupApplication</li>
+    
+    
+    </ul>
+</nav>
+        
+
+        
+        
+            
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+                        <div class="orchid-sourcedoc">
+
+
+<p id="summary">
+    <b>In package <a href="https://camunda-user-group-hamburg.github.io/meetup-20191210/de/cughh/meetup/_20191210/application">de.cughh.meetup._20191210.application</a></b>
+</p>
+<p>
+    <code style="padding: 0;">
+        class de.cughh.meetup._20191210.application.MeetupApplication
+    </code>
+</p>
+<div class="class-description" id="description">
+
+</div>
+
+
+
+
+
+
+
+
+
+<h2 id="constructors">Constructors</h2>
+
+
+
+<div class="panel panel-default">
+    <div class="panel-heading" id="constructor__constructor__">
+        <code>
+        constructor()
+        </code>
+    </div>
+    <div class="panel-body"></div>
+
+    
+<div class="panel-body">
+    <b>Parameters: </b>
+</div>
+<ul class="list-group">
+
+    <li class="list-group-item">No parameters</li>
+
+</ul>
+
+</div>
+
+
+
+
+    <h2 id="methods">Methods</h2>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading" id="method__fun_after10Seconds_____ERROR_CLASS_">
+        <code>
+        fun after10Seconds(): <ERROR CLASS>
+        </code>
+    </div>
+    <div class="panel-body"></div>
+
+    
+
+    
+<div class="panel-body">
+    <b>Parameters: </b>
+</div>
+<ul class="list-group">
+
+    <li class="list-group-item">No parameters</li>
+
+</ul>
+
+    
+
+<div class="panel-footer">
+    <div><b>Returns: </b></div>
+    <div>
+        <code>
+        <ERROR CLASS>
+        </code>
+    </div>
+    <div></div>
+</div>
+
+</div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading" id="method__fun_onUpdate_task___ERROR_CLASS__">
+        <code>
+        fun onUpdate(task: <ERROR CLASS>)
+        </code>
+    </div>
+    <div class="panel-body"></div>
+
+    
+
+    
+<div class="panel-body">
+    <b>Parameters: </b>
+</div>
+<ul class="list-group">
+
+    <li class="list-group-item clearfix">
+        <code class="pull-left">
+        task: <ERROR CLASS>
+        </code>
+        
+    </li>
+
+</ul>
+
+    
+
+</div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading" id="method__fun_logFailure_____ERROR_CLASS_">
+        <code>
+        fun logFailure(): <ERROR CLASS>
+        </code>
+    </div>
+    <div class="panel-body"></div>
+
+    
+
+    
+<div class="panel-body">
+    <b>Parameters: </b>
+</div>
+<ul class="list-group">
+
+    <li class="list-group-item">No parameters</li>
+
+</ul>
+
+    
+
+<div class="panel-footer">
+    <div><b>Returns: </b></div>
+    <div>
+        <code>
+        <ERROR CLASS>
+        </code>
+    </div>
+    <div></div>
+</div>
+
+</div>
+
+
+
+
+</div>
+                    
+                
+            
+        
+    
+    <!-- end:inject components -->
+
+
+        
+        </div>
+
+        <!-- Page navigation
+        =========================================== -->
+        <div class="col-md-3" role="complementary">
+        <div class="bs-docs-sidebar hidden-print" id="bs-docs-sidebar">
+    
+
+    <ul class="nav bs-docs-sidenav">
+        
+        
+            
+                
+                    <li class=""><a href="#summary">Summary</a></li>
+                
+            
+        
+        
+            
+                
+                    <li class=""><a href="#description">Description</a></li>
+                
+            
+        
+        
+            
+                <li class="has-children ">
+                    <a>Constructors</a>
+                    <ul class="nav">
+                        
+                        
+                            
+                                <li class="">
+                                    <a href="#constructor__constructor__">constructor()</a>
+                                </li>
+                            
+                        
+                    </ul>
+                </li>
+            
+        
+        
+            
+                <li class="has-children ">
+                    <a>Methods</a>
+                    <ul class="nav">
+                        
+                        
+                            
+                                <li class="">
+                                    <a href="#method__fun_after10Seconds_____ERROR_CLASS_">fun after10Seconds(): &lt;ERROR CLASS&gt;</a>
+                                </li>
+                            
+                        
+                            
+                                <li class="">
+                                    <a href="#method__fun_onUpdate_task___ERROR_CLASS__">fun onUpdate(task: &lt;ERROR CLASS&gt;)</a>
+                                </li>
+                            
+                        
+                            
+                                <li class="">
+                                    <a href="#method__fun_logFailure_____ERROR_CLASS_">fun logFailure(): &lt;ERROR CLASS&gt;</a>
+                                </li>
+                            
+                        
+                    </ul>
+                </li>
+            
+        
+    </ul>
+
+    
+    <!-- start:inject components -->
+    
+    <!-- end:inject components -->
+
+
+
+    <a class="back-to-top" href="#top">
+        <i class="glyphicon glyphicon-chevron-up"></i> Back to top
+    </a>
+</div>
+
+        </div>
+    </div>
+</div>
+
+
+<div id="footer">
+    <div class="container bs-docs-container">
+    <footer class="bs-docs-footer" role="contentinfo">
+    <div class="row">
+        <div class="col-xs-12">
+            <nav aria-label="navigateClasses">
+                <ul class="pager">
+                    
+
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="icons">
+    
+    
+        <a href="https://github.com/camunda-user-group-hamburg/meetup-20191210" class="fa fa-github"></a>
+    
+        <a href="https://twitter.com/cughamburg" class="fa fa-twitter"></a>
+    
+    
+    </div>
+    <br>
+    <p>
+    Documentation template based on the
+    <a href="https://github.com/mistic100/jekyll-bootstrap-doc">Jekyll Bootstrap Doc</a>
+    Jekyll theme by the <a href="https://getbootstrap.com">Bootstrap team</a>. Site created with
+    <a href="https://orchid.netlify.com">Orchid</a>.
+</p>
+
+<ul class="bs-docs-footer-links muted">
+    <li>Currently 20191210</li>
+</ul>
+
+</footer>
+    </div>
+</div>
+
+
+<!-- start:inject scripts -->
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script  src="https://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.3.0/bootbox.min.js"></script>
+<script  src="https://camunda-user-group-hamburg.github.io/meetup-20191210/BsDoc/38368027/assets/js/bsdoc.js"></script>
+<!-- end:inject scripts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.2.0/trianglify.min.js"></script>
+
+<script>
+    $(function () {
+        window.colors = ['#DE9149', '#000000'];
+                  
+    trianglify({});
+
+        buildNav();
+    });
+</script>
+
+</body>
+</html>

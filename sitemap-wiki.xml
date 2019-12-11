@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://camunda-user-group-hamburg.github.io/meetup-20191210/wiki</loc>
+        <lastmod>2019-12-11</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://camunda-user-group-hamburg.github.io/meetup-20191210/wiki/features/spring-boot</loc>
+        <lastmod>2019-12-11</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://camunda-user-group-hamburg.github.io/meetup-20191210/wiki/features/usertask</loc>
+        <lastmod>2019-12-11</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://camunda-user-group-hamburg.github.io/meetup-20191210/wiki/features/bpm-assert</loc>
+        <lastmod>2019-12-11</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://camunda-user-group-hamburg.github.io/meetup-20191210/wiki/features/engine</loc>
+        <lastmod>2019-12-11</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://camunda-user-group-hamburg.github.io/meetup-20191210/wiki/links/webinar</loc>
+        <lastmod>2019-12-11</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://camunda-user-group-hamburg.github.io/meetup-20191210/wiki/links/links</loc>
+        <lastmod>2019-12-11</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://camunda-user-group-hamburg.github.io/meetup-20191210/wiki/setup</loc>
+        <lastmod>2019-12-11</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    
+</urlset>
